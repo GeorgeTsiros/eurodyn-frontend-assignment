@@ -21,7 +21,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/f1.png"
             ],
             "styles": [
               "src/styles.css"
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "interview"
+    }
+  },
+  "defaultProject": "interview",
+  "cli": {
+    "analytics": "55fb11c5-2878-4330-a1e2-fdbf69b49679"
+  }
 }
