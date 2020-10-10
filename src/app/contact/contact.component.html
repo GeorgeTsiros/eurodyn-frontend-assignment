@@ -1,29 +1,24 @@
-<mat-card style="text-align: center;">
-  <div class="row">
-    <mat-card-title>
-      Contact
-    </mat-card-title>
-  </div>
-  <form [formGroup]="messageForm" class="example-form" style="margin-top: 3%;">
-    <div class="row">
-      <mat-form-field appearance="fill">
-        <mat-label>Driver</mat-label>
-        <input matInput formControlName="recipient" required>
-      </mat-form-field>
-    </div>
-    <div class="row">
-      <mat-form-field appearance="fill">
-        <mat-label>Subject</mat-label>
-        <input matInput formControlName="subject" required>
-      </mat-form-field>
-    </div>
-    <div class="row" style="height: 60% !important;">
-      <mat-form-field required appearance="fill">
-        <textarea matInput formControlName="description" required rows="10"></textarea>
-      </mat-form-field>
-    </div>
+
+<div class="container">
+  <form action="action_page.php">
+
+
+   
+
+    <label for="country">Driver</label>
+    <select id="country" name="country">
+      <option value="driver 1">driver 1</option>
+      <option value="driver 2">driver 2</option>
+      <option value="driver 3">driver 3</option>
+    </select>
+
+    <label for="lname">subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Enter your subject..">
+
+    <label for="Message">Message</label>
+    <textarea id="Message" name="Message" placeholder="Enter your message..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
   </form>
-  <div class="row">
-    <button mat-raised-button color='primary' style="margin: auto;" (click)="send()">Send</button>
-  </div>
-</mat-card>
+</div>
